@@ -1,5 +1,6 @@
 package com.example.root.mm_mentorship_alpha;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,13 +8,26 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+=======
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+>>>>>>> e8d36561559af4c240d239262077959815112434
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import com.google.firebase.iid.FirebaseInstanceId;
 
 public class  MainActivity extends AppCompatActivity {
+=======
+
+
+import com.google.firebase.iid.FirebaseInstanceId;
+
+public class                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                MainActivity extends AppCompatActivity {
+>>>>>>> e8d36561559af4c240d239262077959815112434
 
     private static final String TAG ="MainActivity";
 
@@ -23,16 +37,30 @@ public class  MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         WebView myWebView = (WebView) findViewById(R.id.webview);
         myWebView.setWebViewClient(new WebViewClient());
+<<<<<<< HEAD
         //myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.loadUrl("https://mentor-mentee-app.herokuapp.com/");
 
 
         String token = FirebaseInstanceId.getInstance().getToken();
+=======
+        myWebView.getSettings().setJavaScriptEnabled(true);
+        myWebView.loadUrl("https://mentor-mentee-app.herokuapp.com/");
+//        String token = FirebaseInstanceId.getInstance().getToken();
+//        // Log and toast
+//        Log.d(TAG, "Refreshed token: " + token);
+
+
+        // Log and toast
+        String token = FirebaseInstanceId.getInstance().getToken();
+
+>>>>>>> e8d36561559af4c240d239262077959815112434
         // Log and toast
         String msg = getString(R.string.msg_token_fmt, token);
         Log.d(TAG, msg);
         Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
 
+<<<<<<< HEAD
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -69,3 +97,9 @@ public class  MainActivity extends AppCompatActivity {
 }
 
 
+=======
+
+
+    }
+}
+>>>>>>> e8d36561559af4c240d239262077959815112434
