@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/dovico/TECH_HIRE/MM_Mentoring_android-master/MM_Mentorship_alpha/app/build/intermediates/res/merged/debug/menu/menu.xml",
+        "source": "/home/dovico/TECH_HIRE/MM_Mentoring_android-master/MM_Mentorship_alpha/app/src/main/res/menu/menu.xml"
+    },
+    {
+        "merged": "/home/dovico/TECH_HIRE/BACKUP_Android App/MM_Mentoring_android-master/MM_Mentorship_alpha/app/build/intermediates/res/merged/debug/menu/menu.xml",
+        "source": "/home/dovico/TECH_HIRE/BACKUP_Android App/MM_Mentoring_android-master/MM_Mentorship_alpha/app/src/main/res/menu/menu.xml"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/dovico/TECH_HIRE/BACKUP_Android App/MM_Mentoring_android-master/MM_Mentorship_alpha/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/root/.android/build-cache/052ddacbcc8dd401f0def4a651915ae7f6dd0706/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/home/dovico/TECH_HIRE/MM_Mentoring_android-master/MM_Mentorship_alpha/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/root/.android/build-cache/052ddacbcc8dd401f0def4a651915ae7f6dd0706/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/home/dovico/TECH_HIRE/BACKUP_Android App/MM_Mentoring_android-master/MM_Mentorship_alpha/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/root/.android/build-cache/052ddacbcc8dd401f0def4a651915ae7f6dd0706/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/dovico/TECH_HIRE/MM_Mentoring_android-master/MM_Mentorship_alpha/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/root/.android/build-cache/052ddacbcc8dd401f0def4a651915ae7f6dd0706/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    }
+]
