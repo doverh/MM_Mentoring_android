@@ -8,9 +8,9 @@
         android:title="Menu"
         app:showAsAction="never" >
         <menu>
-            <item
-                android:id="@+id/login"
-                android:title="Login"/>
+            <!--<item-->
+                <!--android:id="@+id/login"-->
+                <!--android:title="Login"/>-->
 
             <item
                 android:id="@+id/mentees"
