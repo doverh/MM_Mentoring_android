@@ -22,6 +22,11 @@
             <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
         </intent-filter>
     </service>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -49,7 +54,7 @@
         <activity android:name=".Requests" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SignupActivity" />
-        <activity android:name=".ResetPasswordActivity"></activity>
+        <activity android:name=".ResetPasswordActivity" />
     </application>
 
 </manifest>

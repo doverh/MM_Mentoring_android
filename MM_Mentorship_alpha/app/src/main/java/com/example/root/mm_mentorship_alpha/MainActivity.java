@@ -23,8 +23,8 @@ public class  MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         WebView myWebView = (WebView) findViewById(R.id.webview);
         myWebView.setWebViewClient(new WebViewClient());
-        //myWebView.getSettings().setJavaScriptEnabled(true);
-        myWebView.loadUrl("https://mentor-mentee-app.herokuapp.com/");
+        myWebView.getSettings().setJavaScriptEnabled(true);
+        myWebView.loadUrl("https://mentor-mentee-app.herokuapp.com");
 
 
         String token = FirebaseInstanceId.getInstance().getToken();
@@ -55,11 +55,11 @@ public class  MainActivity extends AppCompatActivity {
                 Intent intent3 = new Intent(this, Mentors.class);
                 this.startActivity(intent3);
                 break;
-
-            case R.id.requests:
-                Intent intent4 = new Intent(this, Requests.class);
-                this.startActivity(intent4);
-                break;
+//
+//            case R.id.requests:
+//                Intent intent4 = new Intent(this, Requests.class);
+//                this.startActivity(intent4);
+//                break;
             default:
                 return super.onOptionsItemSelected(item);
         }

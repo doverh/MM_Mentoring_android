@@ -45,13 +45,14 @@ public class LoginActivity extends AppCompatActivity {
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
-        if (auth.getCurrentUser() != null) {
-            startActivity(new Intent(LoginActivity.this, MainActivity.class));
-            finish();
-        }
+//        if (auth.getCurrentUser() != null) {
+//            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+//            finish();
+//        }
 
         // set the view now
         setContentView(R.layout.activity_login);
+
 
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
@@ -132,52 +133,52 @@ public class LoginActivity extends AppCompatActivity {
 
 
     //Create a new Async class to allow multithreading
-private  class MyAsyncTask extends AsyncTask<String, Integer, Double>
+    private  class MyAsyncTask extends AsyncTask<String, Integer, Double>
 
-{
+    {
 
-    @Override
-    protected Double doInBackground(String... params) {
-        // TODO Auto-generated method stub
-        postData(params[0]);
-        return null;
-    }
+        @Override
+        protected Double doInBackground(String... params) {
+            // TODO Auto-generated method stub
+            postData(params[0]);
+            return null;
+        }
 
 //    protected void onPostExecute(Double result) {
 //        pb.setVisibility(View.GONE);
 //        Toast.makeText(getApplicationContext(), "Login successfully ", Toast.LENGTH_LONG).show();
 //    }
 
-    protected void onProgressUpdate(Integer... progress) {
-        pb.setProgress(progress[0]);
-    }
-
-    //Creates a new post request sending email, pne_status(opt-in for notifications, and fcm_id(token_id)
-    public void postData(String email) {
-        // Create a new HttpClient and Post Header
-        try {
-            OkHttpClient client = new OkHttpClient();
-
-            RequestBody formBody = new FormEncodingBuilder()
-                    .add("email", email)
-                    .add("pne_status", "1")
-                    .add("fcm_id", FirebaseInstanceId.getInstance().getToken())
-                    .build();
-            Request request = new Request.Builder()
-                    .url("https://mm-pushnotificationandroid.herokuapp.com/post_id")
-                    .post(formBody)
-                    .build();
-
-            //log request and response
-            Response response = client.newCall(request).execute();
-            Log.i(TAG,"String Request"+request.toString());
-            Log.i(TAG,"String Response"+response.toString());
-
-
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
+        protected void onProgressUpdate(Integer... progress) {
+            pb.setProgress(progress[0]);
         }
-    }
+
+        //Creates a new post request sending email, pne_status(opt-in for notifications, and fcm_id(token_id)
+        public void postData(String email) {
+            // Create a new HttpClient and Post Header
+            try {
+                OkHttpClient client = new OkHttpClient();
+
+                RequestBody formBody = new FormEncodingBuilder()
+                        .add("email", email)
+                        .add("pne_status", "1")
+                        .add("fcm_id", FirebaseInstanceId.getInstance().getToken())
+                        .build();
+                Request request = new Request.Builder()
+                        .url("https://mm-pushnotificationandroid.herokuapp.com/post_id")
+                        .post(formBody)
+                        .build();
+
+                //log request and response
+                Response response = client.newCall(request).execute();
+                Log.i(TAG,"String Request"+request.toString());
+                Log.i(TAG,"String Response"+response.toString());
+
+
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+            }
+        }
 
     }
 }
