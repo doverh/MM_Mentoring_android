@@ -24,7 +24,7 @@ public class  MainActivity extends AppCompatActivity {
         WebView myWebView = (WebView) findViewById(R.id.webview);
         myWebView.setWebViewClient(new WebViewClient());
         myWebView.getSettings().setJavaScriptEnabled(true);
-        myWebView.loadUrl("https://mentor-mentee-app.herokuapp.com");
+        myWebView.loadUrl("https://mentor-mentee-app-mobile.herokuapp.com");
 
 
         String token = FirebaseInstanceId.getInstance().getToken();
