@@ -11,15 +11,13 @@ import android.webkit.WebViewClient;
 
 public class Requests extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+   protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_requests);
+        setContentView(R.layout.activity_main);
         WebView myWebView = (WebView) findViewById(R.id.webview);
         myWebView.setWebViewClient(new WebViewClient());
-        //myWebView.getSettings().setJavaScriptEnabled(true);
-        myWebView.loadUrl("https://mentor-mentee-app.herokuapp.com/requests");
-
+        myWebView.getSettings().setJavaScriptEnabled(true);
+        myWebView.loadUrl("https://mentor-mentee-app-mobile.herokuapp.com/requests");
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
